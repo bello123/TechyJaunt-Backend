@@ -9,7 +9,7 @@ class BankAccount {
 
     //GET ACCOUNTHOLDER OF THE ACCOUNT
     get accountHolder() {
-         return `${this._firstName} ${this._lastName}`;
+         return ` FirstName: ${this._firstName}  LastName: ${this._lastName}`;
     }
 
     //GET ACCOUNTHOLDER OF THE ACCOUNT
