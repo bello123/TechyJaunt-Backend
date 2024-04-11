@@ -49,6 +49,7 @@ class BankAccount {
 
 }
 
+// Transaction Class which contains the Transaction history
 class Transactions {
     constructor(type, amount) {
         this._type = type;
