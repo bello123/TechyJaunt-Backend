@@ -9,7 +9,11 @@ class BankAccount {
 
     //GET ACCOUNTHOLDER OF THE ACCOUNT
     get accountHolder() {
+
          return `FIRSTNAME: ${this._firstName} LASTNAME: ${this._lastName}`;
+
+         return `${this._firstName} ${this._lastName}`;
+
     }
 
     //GET ACCOUNTHOLDER OF THE ACCOUNT
@@ -49,6 +53,7 @@ class BankAccount {
 
 }
 
+// Transaction Class which contains the Transaction history
 class Transactions {
     constructor(type, amount) {
         this._type = type;
