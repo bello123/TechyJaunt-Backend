@@ -1,15 +1,15 @@
 
 class BankAccount {
-    constructor(accountHolder, accountNumber) {
+    constructor(accountNumber,firstName,lastName) {
         this._accountHolder = accountHolder;
-        this._accountNumber = accountNumber;
+        this._firstName = firstName;
         this._balance = 0;
         this._transactions = [];
     }
 
     //GET ACCOUNTHOLDER OF THE ACCOUNT
     get accountHolder() {
-        return this._accountHolder;
+         return `${this._firstName} ${this._lastName}`;
     }
 
     //GET ACCOUNTHOLDER OF THE ACCOUNT
@@ -63,9 +63,12 @@ class Transactions {
     get amount() {
         return this._amount;
     }
+    get timestamp(){
+        return this._timestamp;
+    }
 }
 
-const Account1 = new BankAccount("Iyemifokhae Bello", 123456789);
+const Account1 = new BankAccount(123456789,"Bello","Iyemifokhae");
 
 
 console.log(Account1.deposit(1000));
