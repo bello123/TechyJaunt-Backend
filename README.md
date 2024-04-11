@@ -15,7 +15,7 @@ To use the `BankAccount` class, follow these steps:
 ```javascript
 // Example usage:
 
-const Account1 = new BankAccount("Iyemifokhae Bello", 123456789);
+const Account1 = new BankAccount(123456789,"Iyemifokhae","Bello");
 
 console.log(Account1.deposit(1000));
 console.log(Account1.deposit(500));
