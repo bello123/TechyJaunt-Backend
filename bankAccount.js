@@ -21,9 +21,9 @@ class BankAccount {
     get balance() {
         return this._balance;
     }
-//GET TRANSACTION HISTORY
+
     getTransactions(){
-        return ` Transaction History:  ${this._transactions;} '
+        return this._transactions;
     }
 
     deposit(amount) {
@@ -75,6 +75,7 @@ console.log(Account1.getTransactions());
 console.log(`Accoubt balance: ${Account1.balance}`);
 
 
+// console.log(Account1.accountHolder);
 // console.log(Account1.accountNumber);
 
 
